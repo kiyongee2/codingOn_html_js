@@ -1,0 +1,19 @@
+h2{
+  /* color: red; */
+  color: rgb(187, 16, 16);
+}
+#p1{
+  background-color: rgb(255, 255, 0);
+}
+/* 두번째 문단은 글꼴을 바탕체로 변경 
+   줄간격을 2배로 함 */
+#p2{
+  font-family: 바탕체;
+  line-height: 2;
+}
+/* span태그의 class 선택 - 글자 굵게함 */
+.coffee{
+  /* bold-700,  */
+  font-weight: 700;
+  /* font-weight: bold; */
+}
