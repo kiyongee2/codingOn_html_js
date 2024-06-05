@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position 실습 과제</title>
+  <style>
+    body {
+      height: 2000px;
+    }
+    .container {
+      width: 500px;
+      height: 500px;
+      border: 10px solid black;
+      /* 부모 요소를 relative로 하면 기준이 됨 */
+      position: relative;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      /* 수평 정렬 */
+      text-align: center;  
+      /* 수직 정렬 */
+      line-height: 100px;
+    }
+    .relative {
+      position: relative;
+      left: 50px;
+      top: 30px;
+      background-color: orange;
+    }
+    .absolute {
+      position: absolute;
+      right: 30px;
+      bottom: 100px;
+      background-color: yellow;
+    }
+    .fixed {
+      position: fixed;
+      right: 100px;
+      top: 100px;
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box relative">item1</div>
+    <div class="box absolute">item2</div>
+    <div class="box fixed">item3</div>
+  </div>
+</body>
+
+</html>
