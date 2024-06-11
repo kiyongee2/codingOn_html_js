@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>shopOn - 상품 소개</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
   <div id="container">
     <header>
@@ -24,11 +23,12 @@
         </ul>
       </nav>
     </header>
-    <div id="main">
+    <main id="main">
       <section id="contents">
-        <h1 class="product_h1">상품 소개</h1>
         <div id="watermelon">
-          <img src=./images/watermelon.PNG" alt="수박">
+          <div class="product_img">
+            <img src="./images/watermelon.PNG" alt="수박">
+          </div>
           <h3>수박(watermelon)</h3>
           <p>대개 <b>수박</b>이라 하면 <strong>수박</strong>이라는 식물의 열매를 지칭하며,
             대개 사람 머리통보다 큰 열매가 덩굴에 맺히며 수분 함량이 높은 것이
@@ -41,7 +41,9 @@
           </p>
         </div>
         <div id="strawberry">
-          <img src="./images/strawberry.PNG" alt="딸기">
+          <div class="product_img">
+            <img src="./images/strawberry.PNG" alt="딸기">
+          </div>
           <h3>딸기(strawberry)</h3>
           <p>딸기는 꽃턱 부분이 과육으로 자라난 헛열매이며 과육은 식용한다.
             즉 딸기의 진짜 열매는 과육 부분이 아니라 겉에 있는 깨알처럼 생긴 것이다.
@@ -51,8 +53,7 @@
           </p>
         </div>
       </section>
-    </div>
-
+    </main>
     <footer>
       <ul id="footer_menu">
         <li><a href="#">쇼핑몰 소개</a></li>
