@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>산술연산 실습 예제</title>
+</head>
+
+<body>
+
+  <script>
+    /* 
+      빵 20개를 3명이 나눠 먹으려 한다.
+      몫과 나머지를 계산하여 아래 조건대로
+      출력하세요.(document.write() 사용)
+
+      출력1 - 각자 빵의 개수: 
+      출력2 - 남은 빵의 개수:
+    */
+
+    let bread = 20;
+    let people = 3;
+
+    //자료형(type)의 크기 - 객체 > 문자 > 실수 > 정수
+    //형변환 - 자동형변환(작은자료형 -> 큰자료형), 
+    // 강제형변환(큰자료형 -> 작은자료형)
+    let 몫 = parseInt(bread / people);
+    let 나머지 = bread % people;
+
+    //console.log(typeof(bread/people));
+
+    document.write("<h2>각자 빵의 개수: " + 몫 + "</h2>");
+    document.write("<h2>남은 빵의 개수: " + 나머지 + "</h2>");
+  </script>
+</body>
+
+</html>
