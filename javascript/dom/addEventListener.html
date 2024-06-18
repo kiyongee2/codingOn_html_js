@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>addEventListener() 함수 예제</title>
+</head>
+<body>
+  <div id="content">
+    <img src="images/peach.jpg" alt="복숭아" id="fruit">
+  </div>
+
+  <script>
+    let fruitImg = document.querySelector("#fruit");
+
+    //실행 함수(익명 함수)
+    fruitImg.addEventListener('mouseover', () => {
+      fruitImg.src = "images/blueberry.jpg";
+    })
+
+    fruitImg.addEventListener('mouseout', function(){
+      fruitImg.src = "images/peach.jpg";
+    })
+
+    /*
+    함수 정의후 호출
+    function changePic() {
+      fruitImg.src = "images/blueberry.jpg";
+    }
+    function originPic() {
+      fruitImg.src = "images/peach.jpg";
+    }
+
+    //on 접두사 생략, 두번째인자에 함수
+    //mouseover - 마우스 올렸을때 이벤트 발생
+    //mouseout -마우스가 벗어났을때 발생
+    fruitImg.addEventListener('mouseover', changePic);
+    fruitImg.addEventListener('mouseout', originPic);
+    */
+
+
+  
+  </script>
+</body>
+</html>
